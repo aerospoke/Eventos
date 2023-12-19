@@ -27,5 +27,7 @@ export const DescriptionContainer = styled.div.attrs({
 & p{
     font-family: 'Roboto', sans-serif;
 }`
-
+export const ButtonBack = styled.button.attrs({
+ className:' mh4 w2 h2 bg-red'
+})``
        

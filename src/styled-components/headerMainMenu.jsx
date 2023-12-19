@@ -14,7 +14,6 @@ export const OptionsMenu = styled.button.attrs({
 })`
 width: 10rem;
 height: 4rem;
-
 background: none;
 border: none; 
 cursor: pointer;
