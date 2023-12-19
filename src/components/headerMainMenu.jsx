@@ -1,7 +1,8 @@
 import React from "react";
-import { HeaderContainer,OptionsMenu } from "../styled-components/headerMainMenu";
+import { HeaderContainer, OptionsMenu } from "../styled-components/headerMainMenu";
+import { Divition } from "../styled-components/home";
 
-const optionsMenuAvalible =[
+const optionsMenuAvalible = [
     {
         nameOption: "Inicio",
         color: "#3CA6A6"
@@ -14,22 +15,25 @@ const optionsMenuAvalible =[
         nameOption: "Login",
         color: "#3CA6A6"
     }
-    
+
 ]
 
-function Header(){
+function Header() {
     return (
-        <HeaderContainer>
-            {optionsMenuAvalible.map(item => {
+        <div>
+            <HeaderContainer>
+                {optionsMenuAvalible.map(item => {
 
-                return (
-                    <OptionsMenu hoverColorButton={item.color}>
-                        {item.nameOption}
-                    </OptionsMenu>
-                )
+                    return (
+                        <OptionsMenu hoverColorButton={item.color}>
+                            {item.nameOption}
+                        </OptionsMenu>
+                    )
 
-            })}
-        </HeaderContainer>
+                })}
+            </HeaderContainer>
+            <Divition />
+        </div>
     )
 }
 

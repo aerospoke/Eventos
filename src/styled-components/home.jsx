@@ -7,9 +7,8 @@ export const HomeContainer = styled.div.attrs({
 })``
 
 export const AnnounceHeader = styled.div.attrs({
-    className:'flex items-center justify-center h2 w-100 white'
-})`
-background-color: #3CA6A6;`
+    className:'flex items-center justify-center h3 w-100 black'
+})``
 
 export const AnnounceBanner = styled.div.attrs({
     className:'w-90 ma4 br3'
@@ -17,3 +16,10 @@ export const AnnounceBanner = styled.div.attrs({
 height:400px;
 background-color:#012E40;
 `        
+
+export const Divition = styled.div.attrs({
+    className:'w-100'
+})`
+background-color: #3CA6A6;
+height:5px;
+`

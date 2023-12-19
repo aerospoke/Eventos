@@ -6,7 +6,7 @@ width: 100%;
 height: 4rem;
 background-color: #026773;
 display:flex;
-justify-content:flex-end
+justify-content:center;
 `
 
 export const OptionsMenu = styled.button`
