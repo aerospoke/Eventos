@@ -9,12 +9,12 @@ display:flex;
 justify-content:center;
 `
 
-export const OptionsMenu = styled.button`
+export const OptionsMenu = styled.button.attrs({
+    className:'white flex items-center justify-center'
+})`
 width: 10rem;
-color: white;
-display: flex;
-align-items:center;
-justify-content:center;
+height: 4rem;
+
 background: none;
 border: none; 
 cursor: pointer;

@@ -3,6 +3,7 @@ import Header from "./headerMainMenu";
 import HomePage from "./homePage";
 import Events from "./eventsPage";
 import { AnnounceHeader, Divition } from "../styled-components/home";
+import { HashRouter, Routes, Route } from "react-router-dom"
 
 
 
@@ -10,9 +11,13 @@ import { AnnounceHeader, Divition } from "../styled-components/home";
 function PrincipalPage() {
     return (
         <div>
-            <Header />
-            {/* <HomePage/> */}
-            <Events />
+            <HashRouter>
+                <Header />
+                <Routes>
+                    <Route path="/home" element={<HomePage />} />
+                    <Route path="/events" element={<Events />} />
+                </Routes>
+            </HashRouter>
         </div>
     )
 }
