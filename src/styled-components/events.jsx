@@ -12,20 +12,27 @@ export const PrincipalContainer = styled.div.attrs({
 height:18rem;
 `
 
-export const ImageEvent = styled.div.attrs({
-    className:' w-100'
-})`
-height: 15rem;
-background-color:#012E40;
-border-radius: 6px 6px 0px 0px;
-`
+export const ImageEvent = styled.div.attrs(props => ({
+    className: 'w-100',
+    style: {
+      backgroundImage: `url(${props.imageUrl})`,
+    },
+  }))`
+    height: 15rem;
+    background-color: #012E40;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px 6px 0px 0px;
+  `;
 
 export const DescriptionContainer = styled.div.attrs({
-    className:'flex justify-center'
+    className:'wrap flex justify-center fw5 f6'
 })`
 
-& p{
+& a{
     font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        color: #034d56;
 }`
 export const ButtonBack = styled.button.attrs({
  className:' mh4 w2 h2 bg-red'

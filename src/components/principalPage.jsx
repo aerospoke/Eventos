@@ -16,8 +16,8 @@ function PrincipalPage() {
                 <Header />
                 <Routes>
                     <Route path="/home" element={<HomePage />} />
-                    <Route path="/events" element={<Events />} />
-                    <Route path="/events/:id" element={<EventsPost />} />
+                    <Route path="/products" element={<Events />} />
+                    <Route path="/product/:id" element={<EventsPost />} />
 
                 </Routes>
             </HashRouter>

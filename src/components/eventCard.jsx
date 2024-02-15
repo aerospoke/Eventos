@@ -3,13 +3,17 @@ import { PrincipalContainer, ImageEvent, DescriptionContainer } from "../styled-
 import { Link } from "react-router-dom";
 
 function EventCard(props) {
-    console.log("🚀 ~ file: eventCard.jsx:6 ~ EventCard ~ props:", props)
+  
+    const data = props && props.item
+    console.log("🚀 ~ EventCard ~ data:", data)
+
+    const dataTitle = data.title
 
     return (
         <PrincipalContainer>
-            <ImageEvent />
+            <ImageEvent imageUrl={props.item.images.at(0)}/>
             <DescriptionContainer>
-                <Link to={'/events/'+ props.id}>{props.name}</Link>
+                <Link to={'/product/'+ props.item.id}><p>{props.item.title}</p></Link>
             </DescriptionContainer>
 
         </PrincipalContainer>

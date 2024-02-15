@@ -12,7 +12,7 @@ const optionsMenuAvalible = [
     {
         nameOption: "Eventos",
         color: "#3CA6A6",
-        url: 'events'
+        url: 'products'
     },
     {
         nameOption: "Login",
