@@ -29,5 +29,17 @@ export const DescriptionContainer = styled.div.attrs({
 }`
 export const ButtonBack = styled.button.attrs({
  className:' mh4 w2 h2 bg-red'
-})``
+})`
+`
+
+export const ButtonSaved = styled.button.attrs({
+    className:'w6 h2 br2 ma2 flex justify-center items-center f6 fw5'
+})`
+color: ${(props) => (props.state ? 'white' : 'black')};
+background-color: ${(props) => (props.state ? '#3CA6A6' : '#D7DBDD')};
+border:none;
+&:hover{
+    background-color:#026773;
+
+}`
        
